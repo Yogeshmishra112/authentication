@@ -14,7 +14,7 @@ app.use(cors({
 app.use(cookieParser());
 app.use(express.json());
 app.use('/api', router); //after this route all the routes will be handled
-mongoose.connect("mongodb+srv://yogeshmishra362:kCHUsIW0W3L3m5q8@cluster0.dupat.mongodb.net/").then(()=>{
+mongoose.connect("").then(()=>{
     app.listen(5000);
     console.log("Database is connected and listening to port 5000 ");
     
